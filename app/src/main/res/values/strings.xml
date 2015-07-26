@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Voice Mail Test</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="device_description">This is required to record the call</string>
+    <string name="device_admin_label">Voice Mail</string>
+</resources>

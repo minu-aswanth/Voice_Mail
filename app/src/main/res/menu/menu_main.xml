@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Set Time Delay"
+        android:id="@+id/delayTitle" />
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_six"
+            android:orderInCategory="1"
+            android:title="6 seconds">
+        </item>
+        <item
+            android:id="@+id/menu_eight"
+            android:orderInCategory="2"
+            android:title="8 seconds">
+        </item>
+        <item
+            android:id="@+id/menu_ten"
+            android:orderInCategory="3"
+            android:title="10 seconds">
+        </item>
+        <item
+            android:id="@+id/menu_twelve"
+            android:orderInCategory="4"
+            android:title="12 seconds">
+        </item>
+    </group>
+
+</menu>
