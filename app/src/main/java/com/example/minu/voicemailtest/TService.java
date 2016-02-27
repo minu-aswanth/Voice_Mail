@@ -119,14 +119,16 @@ public class TService extends Service{
                             Toast.makeText(context, "ANSWERED", Toast.LENGTH_LONG).show();
                             Log.i(TAG, "Answered");
 
-                            AudioManager am = (AudioManager) context.getSystemService(AUDIO_SERVICE);
-                            am.requestAudioFocus(null,am.STREAM_VOICE_CALL, AudioManager.AUDIOFOCUS_GAIN_TRANSIENT| AudioManager.AUDIOFOCUS_GAIN_TRANSIENT_MAY_DUCK);
+                            Context context3 = getBaseContext();
 
 //                            //Playing Audio
 //                            MediaPlayer mp = new MediaPlayer();
 //                            try {
-//                                mp.setDataSource(Environment.getExternalStorageDirectory().getPath() + "/test.mp4");
+//                                AudioManager audioManager = (AudioManager)context3.getSystemService(Context.AUDIO_SERVICE);
+//                                audioManager.setMode(AudioManager.MODE_IN_CALL);
+//                                audioManager.setSpeakerphoneOn(false);
 //                                mp.setAudioStreamType(AudioManager.STREAM_VOICE_CALL);
+//                                mp.setDataSource(Environment.getExternalStorageDirectory().getPath() + "/test.mp4");
 //                                mp.prepare();
 //                                mp.start();
 //                                Log.i(TAG, "Playing");
@@ -134,7 +136,6 @@ public class TService extends Service{
 //                                Log.e(TAG, "prepare() failed");
 //                            }
 //                            long totalDuration = mp.getDuration();
-//                            Context context3 = getBaseContext();
 //
 //                            //Delay till message finishes
 //                            try {
